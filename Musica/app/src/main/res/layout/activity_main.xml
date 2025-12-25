@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSoundPool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="260dp"
+        android:text="sonido 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="120dp"
+        android:text="play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="27dp"
+        android:text="pause"
+        app:layout_constraintBottom_toTopOf="@+id/bCarga"
+        app:layout_constraintEnd_toStartOf="@+id/bStop"
+        app:layout_constraintStart_toEndOf="@+id/bPlay"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="34dp"
+        android:text="stop"
+        app:layout_constraintBottom_toTopOf="@+id/bRelease"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bCarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="31dp"
+        android:text="carga"
+        app:layout_constraintEnd_toStartOf="@+id/bRelease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bPause" />
+
+    <Button
+        android:id="@+id/bRelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="release"
+        tools:layout_editor_absoluteX="254dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <Button
+        android:id="@+id/bSeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="402dp"
+        android:text="seek too..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/seekBar" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="221dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/bSeek"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTiempo" />
+
+    <Button
+        android:id="@+id/btnSoundPool1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="260dp"
+        android:text="sonido 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="271dp"
+        android:layout_marginBottom="23dp"
+        android:text="Sound Pool"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSoundPool1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="21dp"
+        android:text="tvTiempo"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bPlay" />
+
+    <Button
+        android:id="@+id/btnSoundPool2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="11dp"
+        android:text="sonido 2"
+        app:layout_constraintBottom_toTopOf="@+id/btnSoundPool4"
+        app:layout_constraintEnd_toStartOf="@+id/btnSoundPool3"
+        app:layout_constraintStart_toEndOf="@+id/btnSoundPool" />
+
+    <Button
+        android:id="@+id/btnSoundPool3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="11dp"
+        android:text="sonido 3"
+        app:layout_constraintBottom_toTopOf="@+id/btnSoundPool4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSoundPool2"
+        app:layout_constraintTop_toBottomOf="@+id/bSeek" />
+
+    <Button
+        android:id="@+id/btnSoundPool4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="144dp"
+        android:text="sonido 4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSoundPool2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Reproductor de musica "
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
